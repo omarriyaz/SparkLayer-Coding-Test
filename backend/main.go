@@ -76,3 +76,8 @@ func ToDoListHandler(w http.ResponseWriter, r *http.Request) {
 	http.Error(w, "Method not allowed", http.StatusMethodNotAllowed)
 
 }
+
+// Test the server using curl
+// go run main.go
+// curl -X GET http://localhost:8080/
+// curl -X POST http://localhost:8080/ -H "Content-Type: application/json" -d '{"title": "Go for a jog", "description": "run 4km around the river"}'
